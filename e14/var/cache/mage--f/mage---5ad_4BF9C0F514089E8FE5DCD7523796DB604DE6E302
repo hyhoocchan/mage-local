@@ -1,0 +1,31 @@
+<div class="footer-container">
+    <div class="footer">
+        <form action="https://mage.local/e14/newsletter/subscriber/new/?___SID=S" method="post" id="newsletter-validate-detail">
+    <div class="form-subscribe">
+    <div class="form-subscribe-header">
+        <label for="newsletter">Sign Up for Our Newsletter:</label>
+    </div>
+        <div class="v-fix"><input name="email" type="text" id="newsletter" value="Enter your email address" onclick="this.value=='Enter your email address'?this.value='':''" onblur="this.value==''?this.value='Enter your email address':''" class="input-text required-entry validate-email" /></div>
+        <button type="submit" class="button" title="Subscribe"><span><span>Subscribe</span></span></button>
+    </div>
+</form>
+<script type="text/javascript">
+//<![CDATA[
+    var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail');
+//]]>
+</script>
+<ul class="links">
+                        <li class="first" ><a href="http://mage.local/e14/catalog/seo_sitemap/category/?___SID=U" title="Site Map" >Site Map</a></li>
+                                <li ><a href="http://mage.local/e14/catalogsearch/term/popular/?___SID=U" title="Search Terms" >Search Terms</a></li>
+                                <li ><a href="http://mage.local/e14/catalogsearch/advanced/?___SID=U" title="Advanced Search" >Advanced Search</a></li>
+                                <li ><a href="https://mage.local/e14/sales/guest/form/?___SID=S" title="Orders and Returns" >Orders and Returns</a></li>
+                                <li class=" last" ><a href="http://mage.local/e14/contacts/?___SID=U" title="Contact Us" >Contact Us</a></li>
+            </ul>
+<ul>
+<li><a href="http://mage.local/e14/?___SID=Uabout-magento-demo-store">About Us</a></li>
+<li><a href="http://mage.local/e14/?___SID=Ucustomer-service">Customer Service</a></li>
+<li class="last privacy"><a href="http://mage.local/e14/privacy-policy-cookie-restriction-mode?___SID=U">Privacy Policy</a></li>
+</ul>
+    </div>
+</div>
+<address class="copyright">&copy; 2011 Magento Enterprise Edition Demo Store. All Rights Reserved.</address>

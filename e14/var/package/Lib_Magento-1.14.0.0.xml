@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Lib_Magento</name>
+    <version>1.14.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://www.magentocommerce.com/license/enterprise-edition">Magento Enterprise Edition</license>
+    <channel>enterprise</channel>
+    <extends/>
+    <summary>Magento Library</summary>
+    <description>Magento Library</description>
+    <notes>1.14.0.0</notes>
+    <authors><author><name>Magento Enterprise Team</name><user>core</user><email>core@magentocommerce.com</email></author></authors>
+    <date>2014-05-12</date>
+    <time>07:21:16</time>
+    <contents><target name="magelib"><dir name="Magento"><dir name="Autoload"><file name="ClassMap.php" hash="af710a4a992f1cf748c4054aafac7430"/><file name="IncludePath.php" hash="cf0b007bf9b530213d7826625c7af7fc"/><file name="Simple.php" hash="95ee7dc5f42ef1beab6ee1b167559d52"/></dir><file name="Crypt.php" hash="c876bf5f7d7207fc7a234d6f183bc71b"/><dir name="Db"><dir name="Adapter"><dir name="Pdo"><file name="Mysql.php" hash="6ecb0826e9d6d5d50100aece3aaab30f"/></dir></dir><dir name="Object"><file name="Interface.php" hash="a6250c23687172ac866d341d0ce0d8db"/><file name="Table.php" hash="65013ac54c82b457be581f549e9e66c7"/><file name="Trigger.php" hash="f16bdb5486b4472f7efe72f03b9a83ea"/><file name="View.php" hash="dc9f8e2f012650972a11ab32f1846ad1"/></dir><file name="Object.php" hash="5defaa1071098109aa553c63dd1675ae"/><dir name="Sql"><file name="Select.php" hash="47f0365285d45c8551784f2a7cf817e9"/><file name="Trigger.php" hash="38f70407e462de330dd1501d931d46b8"/></dir></dir><file name="Exception.php" hash="55d57869493d9f7f1d4c4d5ec2fa1962"/><dir name="Profiler"><dir name="Output"><file name="Csvfile.php" hash="c871e2fc72c7b6ebc35647b446455ae8"/><file name="Firebug.php" hash="0eada1f51d89d5296a7d51a86cf04d86"/><file name="Html.php" hash="072bfd33bfa8f78063524227dc6764db"/></dir><file name="OutputAbstract.php" hash="7e1b2c581734c49a13c78816649952c3"/></dir><file name="Profiler.php" hash="a2f15f9305e766a5120aff0dbab36260"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
