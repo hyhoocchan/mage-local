@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<config>
+    <default>
+        <notification_subject><![CDATA[System Setting has been changed at %s]]></notification_subject>
+        <notification_to_name><![CDATA[Thomas Van]]></notification_to_name>
+        <notification_to_email><![CDATA[thomas@forixwebdesign.com]]></notification_to_email>
+        <notification_template><![CDATA[<div>Hello,</div><br><br>
+<div>Date: <strong>%s</strong></div><br><div>IP: <strong>%s</strong></div><br><div>Logged in by: <strong>%s</strong> (<strong>%s</strong>)</div><br><div>Website/Store Code: <strong>%s</strong>/<strong>%s</strong></div><br><div>Modified setting(s):<br>%s</div><br><br>
+<div>System Notification.</div><br>
+]]></notification_template>
+    </default>
+    <modules>
+        <Forix_SystemNotification>
+            <version>0.1.0</version>
+        </Forix_SystemNotification>
+    </modules>
+    <global>
+        <models>
+            <forix_systemnotification>
+                <class>Forix_SystemNotification_Model</class>
+                <resourceModel>forix_systemnotification_resource</resourceModel>
+            </forix_systemnotification>
+            <forix_systemnotification_resource>
+                <class>Forix_SystemNotification_Model_Resource</class>
+            </forix_systemnotification_resource>
+        </models>
+        <helpers>
+            <forix_systemnotification>
+                <class>Forix_SystemNotification_Helper</class>
+            </forix_systemnotification>
+        </helpers>
+    </global>
+    <adminhtml>
+        <events>
+
+            <controller_action_predispatch_adminhtml_system_config_save>
+                <observers>
+                    <save_config>
+                        <type>singleton</type>
+                        <class>Forix_SystemNotification_Model_Observer</class>
+                        <method>predispatch</method>
+                    </save_config>
+                </observers>
+            </controller_action_predispatch_adminhtml_system_config_save>
+
+            <controller_action_predispatch>
+                <observers>
+                    <save_config>
+                        <type>singleton</type>
+                        <class>Forix_SystemNotification_Model_Observer</class>
+                        <method>predispatch</method>
+                    </save_config>
+                </observers>
+            </controller_action_predispatch>
+
+            <model_config_data_save_before>
+                <observers>
+                    <model_before_save>
+                        <type>singleton</type>
+                        <class>Forix_SystemNotification_Model_Observer</class>
+                        <method>modelBeforeSave</method>
+                    </model_before_save>
+                </observers>
+            </model_config_data_save_before>
+            <admin_system_config_section_save_after>
+                <observers>
+                    <save_config>
+                        <type>singleton</type>
+                        <class>Forix_SystemNotification_Model_Observer</class>
+                        <method>saveConfigSuccess</method>
+                    </save_config>
+                </observers>
+            </admin_system_config_section_save_after>
+        </events>
+    </adminhtml>
+</config>
