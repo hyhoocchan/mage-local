@@ -28,7 +28,7 @@
 <config>
     <global>
         <install>
-            <date><![CDATA[Tue, 07 Jul 2015 03:53:13 +0000]]></date>
+            <date><![CDATA[Sun, 16 Aug 2015 06:50:38 +0000]]></date>
         </install>
         <crypt>
             <key><![CDATA[admin]]></key>
@@ -43,7 +43,7 @@
                     <host><![CDATA[localhost]]></host>
                     <username><![CDATA[root]]></username>
                     <password><![CDATA[mysql]]></password>
-                    <dbname><![CDATA[mage_m1911]]></dbname>
+                    <dbname><![CDATA[mage_m1191]]></dbname>
                     <initStatements><![CDATA[SET NAMES utf8]]></initStatements>
                     <model><![CDATA[mysql4]]></model>
                     <type><![CDATA[pdo_mysql]]></type>
