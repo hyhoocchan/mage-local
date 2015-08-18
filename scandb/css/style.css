@@ -1,0 +1,65 @@
+/*
+    Document   : style
+    Created on : Nov 1, 2010, 10:48:44 PM
+    Author     : hhchan
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+* {
+    padding:0;margin:0
+}
+body{
+    color:#00FFFF;font-size:12px;font-family:Arial, Helvetica, sans-serif;line-height: 18px;background-color:#000000
+}
+.clear{clear:both}
+#wrap{
+	margin:5px auto;
+    width:960px;
+    border:1px solid #FFFFFF;
+}
+#header{
+    width:960px;
+	height:auto;
+	padding-top:10px;
+    text-align: center;
+    border-bottom: 1px dotted #FFFFFF;
+}
+#header div.sologan{font-size: 50px;height:60px;line-height:60px}
+#main_content{
+	width: 950px;
+	padding: 5px;
+    border-bottom: 1px dotted #FFFFFF;
+}
+input.btnScan {
+	padding: 5px;color: black;
+	background-color: white;
+}
+#scantable tr td{padding: 5px;}
+.box_content{margin: 5px; border: 1px solid;padding: 10px;height:auto}
+.menu {height:30px;line-height:30px;margin: 5px; margin-top:10px;border-top: 1px solid #FFFFFF;}
+.menu ul{display:inline;}
+.menu ul li a{text-decoration:none;font-size:18px;font-weight:100;color:#0099FF}
+.menu ul li a:hover{color:#CCCCCC;font-weight:bold}
+.menu ul li{list-style:none;display:inline;padding:0 30px;border-right:1px dotted #0099FF}
+.menu ul li.last{border:none}
+#footer{
+    width:960px;
+    height: 60px;
+    line-height:60px;
+    text-align: center;
+}
+#resultscandata{padding: 5px;width: 930px;border: 1px solid;margin: 5px;}
+#scan_form table tr td {padding: 4px;}
+.main_form table tr td{font-size: 12px;}
+.error{color:#FF0000;font-size:10px;font-weight:bold}
+input:text{padding:5px;font-size:12px;}
+
+/*Product */
+.product_image {width:205px;height:165px;float:left;border:1px dotted #999999;margin:5px;padding:10px}
+.product_image img{width:205px;height:165px} 
